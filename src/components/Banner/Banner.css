@@ -1,0 +1,153 @@
+/* Banner Section */
+
+.bannersectionconnect-wrapper {
+  padding: 30px 50px;
+  background-color: #fff;
+}
+
+.bannersectionconnect-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+  justify-content: center;
+
+  max-width: 1300px;
+
+  margin: auto;
+}
+
+
+/* Banner Card */
+
+.bannersectionconnect-card {
+  display: flex;
+
+  flex-direction: row;
+
+  background-color: #f9f9f9;
+
+  flex: 1 1 45%;
+
+  min-width: 300px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Background Image */
+
+.bannersectionconnect-content {
+  flex: 1;
+
+  background-size: cover;
+
+  background-position: center;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: flex-start;
+
+  padding: 30px;
+
+  color: #fff;
+
+  min-height: 150px;
+}
+
+
+/* Content */
+
+.bannersectionconnect-overlay {
+  padding: 30px 0;
+
+  text-align: start;
+}
+
+.bannersectionconnect-content h3 {
+  font-size: 18px;
+
+  margin-bottom: 15px;
+
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+
+  color: #fff;
+}
+
+
+/* Button */
+
+.bannersectionconnect-btn {
+  background-color: #fff;
+
+  color: #000;
+
+  padding: 10px 25px;
+
+  text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  display: inline-block;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  text-transform: uppercase;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+  border: none;
+
+  transition: 0.3s;
+}
+
+.bannersectionconnect-btn:hover {
+  background-color: #000;
+
+  color: #fff;
+
+  border: 2px solid #000;
+
+  padding: 8px 23px;
+}
+
+
+/* Tablet / Mobile */
+
+@media screen and (max-width: 768px) {
+
+  .bannersectionconnect-card {
+    flex-direction: column;
+  }
+
+  .bannersectionconnect-content {
+    text-align: center;
+
+    padding: 40px 20px;
+  }
+
+  .bannersectionconnect-overlay {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .bannersectionconnect-btn {
+    margin-top: 15px;
+  }
+
+  .bannersectionconnect-wrapper {
+    padding: 25px;
+  }
+
+}

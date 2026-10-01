@@ -1,0 +1,199 @@
+/* What We Offer */
+
+.soundoffersection-wrapper {
+  padding: 30px 50px;
+
+  margin: auto;
+}
+
+
+/* Main Row */
+
+.soundoffersection-row {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  gap: 30px;
+}
+
+
+/* Left Side */
+
+.soundoffersection-left {
+  flex: 1 1 50%;
+
+  padding-right: 20px;
+}
+
+
+/* Heading */
+
+.soundoffersection-title {
+  font-size: 36px;
+
+  font-weight: 600;
+
+  color: #0c1f3c;
+}
+
+.soundoffersection-underline {
+  width: 50px;
+
+  height: 5px;
+
+  background: #ffc107;
+
+  margin: -5px 0 20px;
+}
+
+
+/* Paragraph */
+
+.soundoffersection-text {
+  margin-bottom: 20px;
+
+  line-height: 1.6;
+
+  color: #555;
+}
+
+
+/* Right Side */
+
+.soundoffersection-right {
+  flex: 1 1 50%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+
+/* Offer Box */
+
+.soundoffersection-box {
+  background: #f9f9f9;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.soundoffersection-box:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Icon */
+
+.soundoffersection-box img {
+  width: 40px;
+
+  margin-bottom: 15px;
+}
+
+
+/* Box Heading */
+
+.soundoffersection-box h4 {
+  font-size: 16px;
+
+  color: #0c1f3c;
+
+  margin-bottom: 10px;
+}
+
+
+/* Box Paragraph */
+
+.soundoffersection-box p {
+  font-size: 14px;
+
+  color: #555;
+
+  margin-bottom: 10px;
+}
+
+
+/* Details */
+
+.soundoffersection-box a {
+  color: #ffc107;
+
+  font-weight: 600;
+
+  font-size: 14px;
+
+  text-decoration: none;
+}
+
+.soundoffersection-box a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+  .soundoffersection-row {
+    flex-direction: column;
+  }
+
+  .soundoffersection-left,
+  .soundoffersection-right {
+    flex: 1 1 100%;
+  }
+
+  .soundoffersection-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .soundoffersection-wrapper {
+    padding: 25px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+  .soundoffersection-title {
+    font-size: 22px;
+  }
+
+  .soundoffersection-right {
+    grid-template-columns: 1fr;
+  }
+
+  .soundoffersection-wrapper {
+    padding: 20px 15px;
+  }
+
+  .soundoffersection-box {
+    padding: 15px;
+  }
+
+  .soundoffersection-box h4 {
+    font-size: 15px;
+  }
+
+  .soundoffersection-box p,
+  .soundoffersection-box a {
+    font-size: 13px;
+  }
+
+}

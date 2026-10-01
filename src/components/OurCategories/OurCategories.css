@@ -1,0 +1,187 @@
+.ysscategorieshome-wrapper {
+  padding: 30px 50px;
+  margin: auto;
+}
+
+.ysscategorieshome-heading {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.ysscategorieshome-heading h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+
+/* Cards Grid */
+
+.ysscategorieshome-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+/* Card */
+
+.ysscategorieshome-card {
+  padding: 20px;
+
+  border: 1px solid #ccc;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  background: #fff;
+
+  cursor: pointer;
+}
+
+.ysscategorieshome-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+
+  transform: translateY(-5px);
+}
+
+
+/* Image */
+
+.ysscategorieshome-img {
+  width: 100%;
+  height: 200px;
+
+  object-fit: contain;
+}
+
+
+/* Title */
+
+.ysscategorieshome-title {
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+
+/* Visit More Button */
+
+.btn-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.bnt-aaa {
+  text-decoration: none;
+}
+
+.ysscategorieshome-btn {
+  display: flex;
+
+  justify-content: center;
+
+  padding: 15px 20px;
+
+  border: none;
+
+  font-weight: 600;
+
+  background-color: #000;
+
+  color: #fff;
+
+  border-radius: 5px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  margin-top: 30px;
+
+  transition: all 0.3s ease;
+}
+
+.ysscategorieshome-btn:hover {
+  background-color: #fff;
+
+  border: 2px solid #000;
+
+  color: #000;
+
+  padding: 13px 18px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 1024px) {
+
+  .ysscategorieshome-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================
+   SMALL TABLET / MOBILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  .ysscategorieshome-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ysscategorieshome-wrapper {
+    padding: 25px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 480px) {
+
+  .ysscategorieshome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ysscategorieshome-wrapper {
+    padding: 15px;
+  }
+
+  .ysscategorieshome-img {
+    height: 160px;
+
+    width: 175px;
+  }
+
+  .ysscategorieshome-heading h2 {
+    font-size: 24px;
+
+    font-weight: bold;
+  }
+
+  .ysscategorieshome-title {
+    font-size: 16px;
+  }
+
+  .ysscategorieshome-btn {
+    font-size: 13px;
+
+    padding: 8px 16px;
+  }
+
+}

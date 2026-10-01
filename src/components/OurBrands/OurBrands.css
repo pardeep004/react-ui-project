@@ -1,0 +1,137 @@
+.ysscountnumbers-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 250px;
+
+  position: relative;
+  z-index: 1;
+
+  /* Center content vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 10px;
+}
+
+/* Dark overlay */
+.ysscountnumbers-wrapper::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  z-index: -1;
+}
+
+/* Cards container */
+.ysscountnumbers-container {
+  width: 90%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+
+  text-align: center;
+  color: #fff;
+
+  position: relative;
+  z-index: 2;
+
+  /* Keep the cards centered */
+  align-items: center;
+}
+
+/* Individual card */
+.ysscountnumbers-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon */
+.ysscountnumbers-icon {
+  width: 80px;
+  height: 80px;
+
+  background: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.ysscountnumbers-icon img {
+  width: 50px;
+  height: 50px;
+
+  object-fit: contain;
+}
+
+/* Number */
+.ysscountnumbers-number {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+
+  margin: 5px 0;
+}
+
+/* Title */
+.ysscountnumbers-title {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  color: #fff;
+
+  margin: 5px 0 0;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .ysscountnumbers-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .ysscountnumbers-wrapper {
+    min-height: auto;
+    padding: 50px 20px;
+  }
+
+  .ysscountnumbers-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ysscountnumbers-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ysscountnumbers-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ysscountnumbers-number {
+    font-size: 32px;
+  }
+}

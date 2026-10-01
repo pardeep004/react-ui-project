@@ -1,0 +1,98 @@
+/* Brand Section Wrapper */
+
+.yssbrandsection-wrapper {
+  background: #fff;
+  padding: 0 50px 50px;
+  overflow: hidden;
+}
+
+/* Title */
+
+.yssbrandsection-title {
+  color: #000;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: start;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Slider Container */
+
+.yssbrandsection-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Scrolling Track */
+
+.yssbrandsection-track {
+  display: flex;
+  gap: 30px;
+  animation: scrollBrands 25s linear infinite;
+  width: max-content;
+}
+
+/* Pause animation when hovering */
+
+.yssbrandsection-track:hover {
+  animation-play-state: paused;
+}
+
+/* Brand Logo Item */
+
+.yssbrandsection-item {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+}
+
+/* Brand Image */
+
+.yssbrandsection-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* Animation */
+
+@keyframes scrollBrands {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Tablet / Mobile */
+
+@media (max-width: 768px) {
+
+  .yssbrandsection-wrapper {
+    padding: 20px;
+  }
+
+  .yssbrandsection-title {
+    font-size: 24px;
+  }
+
+  .yssbrandsection-item {
+    width: 120px;
+    height: 80px;
+  }
+
+  .yssbrandsection-track {
+    gap: 20px;
+  }
+}
